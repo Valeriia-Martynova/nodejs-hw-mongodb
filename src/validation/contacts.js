@@ -32,10 +32,6 @@ export const createContactSchema = Joi.object({
       'string.valid': 'Contact type should be "work", "home" or "personal"',
       'string.required': 'Contact type is required',
     }),
-  userId: Joi.string().required().messages({
-    'string.base': 'User ID should be a string',
-    'string.required': 'User ID is required',
-  }),
 });
 
 export const updateContactSchema = Joi.object({
